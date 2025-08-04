@@ -6,7 +6,7 @@ authors = [
     {name = "Akash Das",email = "akashdas1966@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.9"
 dependencies = [
     "openai (>=1.98.0,<2.0.0)",
     "python-dotenv (>=1.1.1,<2.0.0)",
