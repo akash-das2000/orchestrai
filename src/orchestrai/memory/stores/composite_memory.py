@@ -58,3 +58,9 @@ class CompositeMemoryStore(MemoryStore):
                     seen_keys.add(key)
 
         return merged
+    
+    def summarize(self) -> None:
+        """
+        No-op: this store doesn’t support summarization.
+        """
+        pass
