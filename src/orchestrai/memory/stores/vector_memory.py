@@ -43,7 +43,7 @@ class VectorMemoryStore(MemoryStore):
         distances, indices = self.index.search(qvec, top_k)
         results = []
         for idx in indices[0]:
-            if idx < len(self.metadatas):
+            if idx >= 0 and idx < len(self.metadatas):
                 key, meta = self.metadatas[idx]
                 results.append((key, meta))
         return results
